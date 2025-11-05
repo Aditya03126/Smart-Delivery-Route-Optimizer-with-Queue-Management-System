@@ -18,31 +18,31 @@ This part manages all customer delivery appointments.
 
 It stores details like:
 
-Appointment ID
+-Appointment ID
 
-Customer name
+-Customer name
 
-Address
+-Address
 
-Delivery time
+-Delivery time
 
-Priority (1 = highest, 5 = lowest)
+-Priority (1 = highest, 5 = lowest)
 
-Zone (A, B, or C)
+-Zone (A, B, or C)
 
-Status (Pending / Done)
+-Status (Pending / Done)
 
 Appointments are stored in a Linked List, sorted by priority and time.
 
 It allows you to:
 
-Add new appointments
+-Add new appointments
 
-Remove appointments by ID
+-Remove appointments by ID
 
-View all scheduled deliveries
+-View all scheduled deliveries
 
-Mark deliveries as completed
+-Mark deliveries as completed
 
  Example:
 If two customers request deliveries — one with higher priority or earlier time — it automatically gets listed first.
@@ -53,17 +53,17 @@ This part manages delivery couriers (drivers).
 
 It uses a Circular Queue to:
 
-Add new couriers with details:
+-Add new couriers with details:
 
-Courier ID
+-Courier ID
 
-Name
+-Name
 
-Zone they are currently in
+-Zone they are currently in
 
-Load capacity (how many deliveries they can take)
+-Load capacity (how many deliveries they can take)
 
-Keep track of which couriers are:
+-Keep track of which couriers are:
 
 Available �
 
@@ -71,11 +71,11 @@ Busy �
 
 Assign couriers automatically based on:
 
-Zone proximity
+-Zone proximity
 
-Availability
+-Availability
 
-Current load
+-Current load
 
  Example:
 If a courier in Zone-A is free, and a delivery is also in Zone-A, that courier will be chosen first.
